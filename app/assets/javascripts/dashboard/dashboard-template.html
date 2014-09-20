@@ -1,0 +1,20 @@
+<div class="row full-hight">
+	<div class="col-sm-6 col-md-4" ng-repeat="task in tasksList.tasks">
+		<a href="#/tasks/{{task.id}}" class="thumbnail">	
+			<div class="caption">
+			<span class="glyphicon {{task.category.icon}}"></span>	/ <span> {{task.category.name}}</span>
+            <h3>{{task.title}}</h3>
+            <p>{{task.description}}</p>
+		    <div>
+		    	<strong class="pull-right"> {{task.time}}</strong>
+			    <span class="pull-left">
+				    {{task.owmer}}
+			    </span>
+		    </div>
+          </div>
+        
+		</a>
+	</div>
+	
+</div>
+

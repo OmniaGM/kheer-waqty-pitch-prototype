@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>خير وقتي</title>
+  <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("img/favicon.png")">
+  <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")">
+  <script data-main="@routes.Assets.versioned("javascripts/config/requirejs-config.js")" src="@routes.Assets.versioned("lib/requirejs/require.js")"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <a href="#/">
+        خير وقتي
+      </a>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          <span class="js-category-selected">الكل</span>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">ترجمة</a></li>
+          <li><a href="#">تعليم</a></li>
+          <li><a href="#">تطوير برمجيات</a></li>
+          <li><a href="#">قراءه صوتية</a></li>
+        </ul>
+      </div>
+    </div>
+    <div ng-view>
+    </div>
+    <div class="jumbotron">
+      <h1>about us</h1>
+      <p> more about us</p>
+      <p><a class="btn btn-primary btn-lg" role="button">donte</a></p>
+    </div>
+
+    <footer class="footer"><div footer></div></footer>
+  </div>
+
+</body>
+</html>
